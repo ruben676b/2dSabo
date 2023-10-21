@@ -9,6 +9,7 @@ VisualElement {
     align-self: auto;
     align-items: center;
     -unity-background-image-tint-color: rgb(56, 56, 56);
+    background-color: rgba(56, 56, 56, 0.88);
 }
 
 .contenedorMenu {
@@ -20,6 +21,9 @@ VisualElement {
 
 .logo {
     -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#LegacyRuntime');
+    background-image: url('project://database/Assets/UI/logo.png?fileID=21300000&guid=386fb2ca5b3feef4eb2d5220d72b0d52&type=3#logo');
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .options {
