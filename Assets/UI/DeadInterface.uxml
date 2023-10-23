@@ -3,7 +3,7 @@
     <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.63);">
         <ui:VisualElement name="VisualElement" style="flex-grow: 1;" />
         <ui:VisualElement name="main" class="main-dead" style="height: 80%; width: 35%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: center; align-items: auto; justify-content: center;">
-            <ui:Button text="Reintentar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="restart" class="restart-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); left: auto; bottom: 39px;" />
+            <ui:Button text="REINTENTAR" parse-escape-sequences="true" display-tooltip-when-elided="true" name="restart" class="restart-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); left: auto; bottom: 39px;" />
         </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 1;" />
     </ui:VisualElement>

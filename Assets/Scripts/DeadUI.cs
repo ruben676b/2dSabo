@@ -8,14 +8,9 @@ using UnityEngine.UIElements;
 
 public class DeadUI : MonoBehaviour
 {
-    [SerializeField] private GameObject UI;
 
     private UIDocument menu;
     private Button restart;
-    private void Start()
-    {
-        UI.gameObject.SetActive(false);
-    }
     private void OnEnable()
     {
         menu = GetComponent<UIDocument>();
@@ -30,7 +25,5 @@ public class DeadUI : MonoBehaviour
     {
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(activeSceneIndex);
-
-        UI.gameObject.SetActive(false);
     }
 }
