@@ -16,6 +16,8 @@ public class PlayerVida : MonoBehaviour
     private Rigidbody2D rb;
     public float timeImunidad;
     public Image healthImg;
+
+    [SerializeField] private GameObject deadUI;
     
     // Start is called before the first frame update
     void Start()
@@ -30,13 +32,17 @@ public class PlayerVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthImg.fillAmount=vida/100;
-        if (vida > Maxvida)
+        //healthImg.fillAmount = vida / 100;
+        //if (vida > Maxvida)
+        //{
+        //    vida = Maxvida;
+
+        //}
+        if(vida <0)
         {
-            vida = Maxvida;
-            
+            deadUI.SetActive(true);
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
