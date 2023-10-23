@@ -10,7 +10,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - laguito
   - Water
   - UI
   - player
@@ -45,4 +45,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 392914367
+    locked: 0
+  - name: laguito
+    uniqueID: 983898101
     locked: 0
