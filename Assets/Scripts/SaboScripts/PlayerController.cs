@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed,jumpH;
+    [Header("Velocidad")]
+    public float speed;
     private float velX, velY;
     private Rigidbody2D rb;
     
-    public Transform groundCheck;
-    public bool isGrounded;
-    public float groudCheckRadius;
-    public LayerMask whatIsGround;
+   [Header("Salto")]
+    private bool isGrounded,saltar;
+    [SerializeField] private float radious, jumpH;
+   
 
     [SerializeField]
     private ParticleSystem particle;
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip salto, ataque;
 
     private AudioSource music;
+    
+    private bool m_FacingRight = true;
     // Start is called before the first frame update
     private void Start()
     {
@@ -38,8 +41,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groudCheckRadius, whatIsGround);
-        FlipPlayer();
+        if (Physics2D.Raycast(transform.position, Vector3.down, radious))
+        {
+            isGrounded = true;
+        }
+        else isGrounded = false;
+
+        if (Input.GetButton("Jump"))
+        {
+            saltar = true;
+        }
+        else saltar = false;
+       
         if (isGrounded)
         {
             anim.SetBool("jump",false);
@@ -54,10 +67,10 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
-        velX = Input.GetAxisRaw("Horizontal");
+        velX = Input.GetAxisRaw("Horizontal")*speed;
         velY = rb.velocity.y;
 
-        rb.velocity = new Vector2(velX * speed, velY);
+        rb.velocity = new Vector2(velX*Time.fixedDeltaTime , velY);
         particle.Play();
         if (rb.velocity.x != 0)
         {
@@ -66,6 +79,17 @@ public class PlayerController : MonoBehaviour
         else
         {
             anim.SetBool("run",false);
+        }
+        if (velX > 0 && !m_FacingRight)
+        {
+            // ... flip the player.
+            FlipPlayer();
+        }
+        // Otherwise if the input is moving the player left and the player is facing right...
+        else if (velX < 0 && m_FacingRight)
+        {
+            // ... flip the player.
+            FlipPlayer();
         }
     }
 
@@ -83,19 +107,17 @@ public class PlayerController : MonoBehaviour
     }
     private void FlipPlayer()
     {
-        if (rb.velocity.x > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if(rb.velocity.x<0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        m_FacingRight = !m_FacingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     private void Jump()
     {
-        if (Input.GetButton("Jump") && isGrounded)
+        if (isGrounded && saltar)
         {
             music.PlayOneShot(salto);
             rb.velocity = new Vector2(rb.velocity.x, jumpH);

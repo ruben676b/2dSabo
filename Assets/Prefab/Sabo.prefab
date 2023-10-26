@@ -5102,13 +5102,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8931686515708395224}
-  - component: {fileID: 414121403970392686}
-  - component: {fileID: 8021920246103716346}
   - component: {fileID: 4814218236193892911}
-  - component: {fileID: 7783522037523666198}
   - component: {fileID: 6501808309512033103}
   - component: {fileID: 6334326407687032512}
   - component: {fileID: 2285541612286691566}
+  - component: {fileID: 414121403970392686}
+  - component: {fileID: 8021920246103716346}
+  - component: {fileID: 7783522037523666198}
   - component: {fileID: 4045687305476705057}
   - component: {fileID: 8851393533228101513}
   m_Layer: 0
@@ -5136,36 +5136,6 @@ Transform:
   - {fileID: 8573482137458394678}
   m_Father: {fileID: 5409204604459332094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &414121403970392686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5927101036189301258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e98a886ad9d0f2e44bf453c5df4676dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  blink: {fileID: 2100000, guid: 62ea2e3e3c200e342bf2892f1f1ac643, type: 2}
---- !u!114 &8021920246103716346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5927101036189301258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a1e8967447d2e34da4db130330d8ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuego: {fileID: 7009812252350575621, guid: 96011c906c3eb744e86c6f02ac26cb2a, type: 3}
-  fuegoS: {fileID: 8300000, guid: 6ec4f9b4e5cf173418d2b657313a30b9, type: 3}
-  velocity: 500
-  time: 0.3
 --- !u!212 &4814218236193892911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5218,24 +5188,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7783522037523666198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5927101036189301258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e488df73c64147344a7504ecbfc581f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 100
-  Maxvida: 100
-  enpujeX: 10
-  enpujeY: 0
-  timeImunidad: 0.5
-  healthImg: {fileID: 0}
 --- !u!70 &6501808309512033103
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5311,16 +5263,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  jumpH: 10
-  groundCheck: {fileID: 7515230392444858590}
   isGrounded: 0
-  groudCheckRadius: 0.3
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 128
+  saltar: 0
+  radious: 0
+  jumpH: 10
   particle: {fileID: 3748209323618946021}
   salto: {fileID: 8300000, guid: b25c9b3008a870146b31e012f94aec1e, type: 3}
   ataque: {fileID: 8300000, guid: d28b73187b483984e8ae925bb4fceb6f, type: 3}
+--- !u!114 &414121403970392686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927101036189301258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98a886ad9d0f2e44bf453c5df4676dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  blink: {fileID: 2100000, guid: 62ea2e3e3c200e342bf2892f1f1ac643, type: 2}
+--- !u!114 &8021920246103716346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927101036189301258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1e8967447d2e34da4db130330d8ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuego: {fileID: 7009812252350575621, guid: 96011c906c3eb744e86c6f02ac26cb2a, type: 3}
+  fuegoS: {fileID: 8300000, guid: 6ec4f9b4e5cf173418d2b657313a30b9, type: 3}
+  velocity: 500
+  time: 0.3
+--- !u!114 &7783522037523666198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927101036189301258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e488df73c64147344a7504ecbfc581f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
+  Maxvida: 100
+  enpujeX: 10
+  enpujeY: 0
+  timeImunidad: 0.5
+  healthImg: {fileID: 0}
+  deadUI: {fileID: 0}
 --- !u!95 &4045687305476705057
 Animator:
   serializedVersion: 5
