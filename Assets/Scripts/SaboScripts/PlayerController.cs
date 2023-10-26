@@ -52,15 +52,9 @@ public class PlayerController : MonoBehaviour
             saltar = true;
         }
         else saltar = false;
-       
-        if (isGrounded)
-        {
-            anim.SetBool("jump",false);
-        }
-        else
-        {
-            anim.SetBool("jump",true);
-        }
+       anim.SetFloat("run",Math.Abs(velX));
+       anim.SetFloat("velY",velY);
+       anim.SetBool("isGround",isGrounded);
         Attack();
       
     }
@@ -72,14 +66,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(velX*Time.fixedDeltaTime , velY);
         particle.Play();
-        if (rb.velocity.x != 0)
-        {
-            anim.SetBool("run",true);
-        }
-        else
-        {
-            anim.SetBool("run",false);
-        }
+       
         if (velX > 0 && !m_FacingRight)
         {
             // ... flip the player.
