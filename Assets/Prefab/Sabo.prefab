@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4740694780344467438}
   - component: {fileID: 3748209323618946021}
   - component: {fileID: 5576073111165645630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4870,7 @@ GameObject:
   - component: {fileID: 8573482137458394678}
   - component: {fileID: 6306107552643684191}
   - component: {fileID: 4714254633869113201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: weapon
   m_TagString: weapon
   m_Icon: {fileID: 0}
@@ -4964,6 +4964,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &2697049838684907617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8960136157352099806}
+  m_Layer: 6
+  m_Name: Fuego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8960136157352099806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697049838684907617}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.228, y: -0.079, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8931686515708395224}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5185114859206589764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,9 +5005,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5409204604459332094}
   - component: {fileID: 6376054237449075802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sabo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4991,7 +5022,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.332195, y: 2.2535043, z: -9.935072}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8931686515708395224}
@@ -5017,7 +5048,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.727192
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5111,7 +5142,7 @@ GameObject:
   - component: {fileID: 7783522037523666198}
   - component: {fileID: 4045687305476705057}
   - component: {fileID: 8851393533228101513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: idle1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5127,13 +5158,14 @@ Transform:
   m_GameObject: {fileID: 5927101036189301258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.463, y: -1.977, z: 9.935072}
+  m_LocalPosition: {x: 0, y: 0, z: 9.935072}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7515230392444858590}
   - {fileID: 4740694780344467438}
   - {fileID: 8573482137458394678}
+  - {fileID: 8960136157352099806}
   m_Father: {fileID: 5409204604459332094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4814218236193892911
@@ -5262,11 +5294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237f504c99fc63041ba40f115d686319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  isGrounded: 0
-  saltar: 0
-  radious: 0
-  jumpH: 10
+  speed: 400
+  radious: 1.21
+  jumpH: 20
   particle: {fileID: 3748209323618946021}
   salto: {fileID: 8300000, guid: b25c9b3008a870146b31e012f94aec1e, type: 3}
   ataque: {fileID: 8300000, guid: d28b73187b483984e8ae925bb4fceb6f, type: 3}
@@ -5297,6 +5327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuego: {fileID: 7009812252350575621, guid: 96011c906c3eb744e86c6f02ac26cb2a, type: 3}
+  controladorDisparo: {fileID: 8960136157352099806}
   fuegoS: {fileID: 8300000, guid: 6ec4f9b4e5cf173418d2b657313a30b9, type: 3}
   velocity: 500
   time: 0.3

@@ -6,7 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="47924d6f-f092-4cac-adbb-ecbdb2bc4f07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2dSabo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2dSabo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Attack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Death.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Death.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Idle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Run.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Take Hit 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Take Hit 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Take Hit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/TypeEnemies/Goblin/Sprites/Take Hit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/PrefabEnemy/Enemies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PrefabEnemy/Enemies.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/PrefabsSabo/fire1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PrefabsSabo/fire1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Sabo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Sabo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/Fx_pack/1/1_46.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/Fx_pack/1/1_46.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/Efects/fire/fire/fire5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/animation/attackFire.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/animation/attackFire.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SABO/animation/idle1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SABO/animation/idle1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaboScripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaboScripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaboScripts/SubWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaboScripts/SubWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,35 +38,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ruben676b&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="60b0d9e2-c8bd-4f60-81b6-06a49369e53e" />
+        <option name="url" value="https://github.com/ruben676b/2dSabo" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Programas/DefaultUnity/mera/2dSabo/Assets/SABO/animation/attackFire.anim" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaboScripts/Proyectil.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2XJRIOcTcrWrO6JzjOB6QA7KkKb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Movimiento&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ruben\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ruben\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\ruben\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ruben\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ruben\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ruben\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Programas\UnityEngine\2022.3.8f1\Editor\Unity.exe" />
@@ -91,13 +132,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698345153600</updated>
-      <workItem from="1698345155856" duration="3621000" />
+      <workItem from="1698345155856" duration="5267000" />
+      <workItem from="1698425859575" duration="6954000" />
+      <workItem from="1698434903919" duration="120000" />
+      <workItem from="1698437816343" duration="1650000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">

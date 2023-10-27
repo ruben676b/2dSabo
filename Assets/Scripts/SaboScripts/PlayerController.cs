@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
+    
     private void Jump()
     {
         if (isGrounded && saltar)
@@ -111,5 +111,10 @@ public class PlayerController : MonoBehaviour
             particle.Play();
         }
       
+    }
+    //Ataque fuego
+    public bool CanAttack()
+    {
+        return velX == 0 && isGrounded;
     }
 }

@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class SubWeapon : MonoBehaviour
 {
-    public GameObject fuego;
+    private PlayerController playerController;
+    [SerializeField] private GameObject fuego;
+    [SerializeField] private Transform controladorDisparo;
+    [SerializeField] private Transform fuegoPoint;
+    [SerializeField] private GameObject[] bolasFuego;
     private Animator anim;
     public AudioClip fuegoS;
     private AudioSource music;
@@ -15,47 +19,47 @@ public class SubWeapon : MonoBehaviour
     {
         music = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        playerController = GetComponent<PlayerController>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        UseFire();
-    }
-
-    void UseFire()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetButtonDown("Fire1") && playerController.CanAttack())
         {
-            StartCoroutine(DispararConEspera());
-
-
-
-
-        }
-        else if(Input.GetKeyUp(KeyCode.Q))
+            anim.SetBool("fire",true);
+            UseFire();
+        } else if (Input.GetButtonUp("Fire1") )
         {
             anim.SetBool("fire",false);
         }
+      
+       
+    }
+    //ATAQUE FUEGO
 
+    void UseFire()
+    {
         
+        //Instantiate(fuego, controladorDisparo.position, controladorDisparo.rotation);
+        bolasFuego[Find()].transform.position = fuegoPoint.position;
+        bolasFuego[Find()].GetComponent<Proyectil>().SetDirection(Mathf.Sign(transform.localScale.x));
+    }
+
+    private int Find()
+    {
+        for (int i = 0; i < bolasFuego.Length; i++)
+        {
+            if (!bolasFuego[i].activeInHierarchy)
+            {
+                return i;
+            }
+
+        }
+        return 0;
     }
     
-    private IEnumerator DispararConEspera()
-    {
-        anim.SetBool("fire", true);
-        yield return new WaitForSeconds(time);
-        music.PlayOneShot(fuegoS);
-        GameObject subFuego = Instantiate(fuego, transform.position, Quaternion.identity);
-        if (transform.localScale.x < 0)
-        {
-            
-            subFuego.GetComponent<Rigidbody2D>().AddForce(new Vector2(-velocity, 0f), ForceMode2D.Force);
-            subFuego.transform.localScale = new Vector2(-1, -1);
-        }
-        else
-        {
-            subFuego.GetComponent<Rigidbody2D>().AddForce(new Vector2(velocity, 0f), ForceMode2D.Force);
-        }
-    }
+    
+    
 }
